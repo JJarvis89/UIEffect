@@ -22,7 +22,7 @@ jobs:
         sudo mkdir -p /temp
         sudo cp -a ./Assets/Coffee/UIExtensions/UIEffect/. /temp
     - name: Checkout orphan branch
-      run: bash ./Build/orphan-branch.sh upm
+      run: bash ./.github/orphan-branch.sh upm
     - name: Create upm commit
       run: |
         git config --local user.email "action@github.com"
